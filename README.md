@@ -7,7 +7,8 @@ A template for Symfony 5 applications
 2. ```git clone git@github.com:pps1/symfony-starterkit.git```
 3. ```cd symfony-starterkit```
 4. ```docker compose up```
-5. (optional) Install the [Symfony Binary](https://symfony.com/download)
+5. The application should now be available at http://localhost:8002
+6. (optional) Install the [Symfony Binary](https://symfony.com/download)
 
 ## More reading materials
 - https://symfony.com/
