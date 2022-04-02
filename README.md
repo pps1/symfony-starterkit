@@ -10,6 +10,28 @@ A template for Symfony 5 applications
 5. The application should now be available at http://localhost:8002
 6. (optional) Install the [Symfony Binary](https://symfony.com/download)
 
+## Running tests
+You can run tests with the following command:
+```shell
+bin/phpunit
+```
+
+## Linting
+You can execute the [Psalm](https://psalm.dev/) linter with the following command:
+```shell
+bin/psalm
+```
+
+You can execute the [PHPStan](https://github.com/phpstan/phpstan) linter with the following command:
+```shell
+bin/phpstan
+```
+
+You can fix your code smell using [CS Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer) with the following command:
+```shell
+bin/csfixer
+```
+
 ## More reading materials
 - https://symfony.com/
 - https://symfony.com/doc/5.4/index.html

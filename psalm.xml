@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<psalm
+    errorLevel="1"
+    resolveFromConfigFile="true"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="https://getpsalm.org/schema/config"
+    xsi:schemaLocation="https://getpsalm.org/schema/config vendor/vimeo/psalm/config.xsd"
+>
+    <projectFiles>
+        <directory name="config"/>
+        <directory name="src" />
+        <directory name="tests"/>
+        <ignoreFiles>
+            <directory name="var"/>
+            <directory name="vendor"/>
+            <file name="config/preload.php"/>
+            <file name="tests/bootstrap.php"/>
+        </ignoreFiles>
+    </projectFiles>
+    <plugins>
+        <pluginClass class="Psalm\SymfonyPsalmPlugin\Plugin"/>
+        <pluginClass class="Psalm\PhpUnitPlugin\Plugin"/>
+    </plugins>
+    <issueHandlers>
+        <LessSpecificReturnType errorLevel="suppress"/>
+        <PluginIssue name="InvalidConsoleArgumentValue" errorLevel="suppress" />
+        <UnnecessaryVarAnnotation errorLevel="suppress"/>
+        <UnusedClosureParam errorLevel="suppress"/>
+    </issueHandlers>
+</psalm>
