@@ -1,4 +1,17 @@
 <?xml version="1.0"?>
+<!--
+ * Psalm Configuration file
+ *
+ * Error levels: 1-8; 1 is most strict
+ *
+ * References:
+ * - https://github.com/vimeo/psalm
+ * - https://github.com/vimeo/psalm/tree/master/docs
+ * - https://github.com/vimeo/psalm/blob/master/docs/running_psalm/configuration.md
+ * - https://github.com/vimeo/psalm/blob/master/docs/running_psalm/error_levels.md
+ * - https://github.com/vimeo/psalm/blob/master/psalm.xml.dist
+ * - https://psalm.dev/docs/running_psalm/dealing_with_code_issues/
+-->
 <psalm
     errorLevel="1"
     resolveFromConfigFile="true"
